@@ -1,10 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import Expo from 'expo';
+import {Scene, Mesh, MeshBasicMaterial, PerspectiveCamera} from 'three';
+import ExpoTHREE, {THREE, Renderer} from 'expo-three';
+import {ExpoWebGLRenderingContext} from 'expo-gl';
 
-export default function App() {
+export default function App(){
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Hello World!</Text>
     </View>
   );
 }
@@ -12,8 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
-  },
+    alignItems: 'center'
+  }
 });
