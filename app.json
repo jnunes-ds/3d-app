@@ -1,0 +1,12 @@
+{
+  "name": "3d-app",
+  "displayName": "3d-app",
+  "expo": {
+    "name": "3d-app",
+    "slug": "3d-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
