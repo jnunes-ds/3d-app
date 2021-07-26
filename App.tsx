@@ -41,8 +41,19 @@ export default function App(){
 
     function render(){
       requestAnimationFrame(render);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+      if(cube.rotation.x <= 12.555){
+        cube.rotation.x += 0.01;
+      }else{
+        cube.rotation.x = 0;
+      }
+
+      if(cube.rotation.y <= 12.555){
+        cube.rotation.y += 0.01;
+      }else{
+        cube.rotation.y = 0;
+      }
+
+
       renderer.render(scene, camera);
       gl.endFrameEXP();
     }
